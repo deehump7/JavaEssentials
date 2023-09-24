@@ -52,11 +52,16 @@ public class dayOfWeek {
         int num2 = scanner.nextInt();
 
         scanner.close();
+        if (num2 < num1){
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
 
         int sumTotal = 0;
         for (int i = num1; i <= num2; i++) {
             sumTotal += i;
         }
-        System.out.println("The total sum of the numbers between " + num1 + " and " + num2 + " (inclusive) is: " + sumTotal);
+        System.out.println("The total sum of the numbers between " + num1 + " and " + num2 + " is: " + sumTotal);
     }
 }
