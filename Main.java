@@ -39,7 +39,7 @@ class Person {
         System.out.println("Books purchased by " + name + ": " + purchasedBooks);
     }
 
-    // Other methods for interacting with the bookstore can be added here
+    // methods
 }
 
 class Bookstore {
